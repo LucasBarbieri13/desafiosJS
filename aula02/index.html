@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Variáveis</title>
 </head>
 <body>
     <h1>Aula 02</h1>
+    <h2>Var e Let</h2>
+    <p class="var">var a = 1; </br>var b = 2;</br></br>
+
+    <pre>   if (a === 1) {</br>
+        var a = 11; <span class="comment">// escopo global</span>
+        let b = 22; <span class="comment">// escopo local, dentro do bloco if</span>
+    
+        console.log(a); <span class="comment">// 11</span>
+        console.log(b); <span class="comment">// 22</span>
+    }
+    console.log(a); <span class="comment">// 11</span>
+    console.log(b); <span class="comment">// 2</span></pre>
+    </p>
+
+    <ul class="hint">
+        <li>var pode ser reatribuída e redeclarada.</li>
+        <li>let pode ser reatribuído mas não pode ser redeclarado.</li>
+    </ul>
+
+    <h2>Const</h2>
+
+    <p class="var">const FIRST_NAME = 'Lucas';</p>
+
+   <ul class="hint">
+    <li>Const não pode ser reatribuída nem redeclarada.</li>
+    <li>Não é elevado pelo hoisting.</li>
+</ul>
 
     <script src="script.js"></script>
 </body>

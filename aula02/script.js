@@ -64,3 +64,21 @@ escopolocal();
 //&& -> e : todos os valores sejam true
 // || -> ou : qualquer valor seja true
 // ! -> não : inverte os valores de true para false e false para true
+
+// Hoisting: Apenas var pode ser atribuída antes da declaração. 
+number1 = 1;
+console.log(number1 + 2);
+
+var number1;
+
+var firstName = 'Lucas';
+let lastName = 'Barbieri';
+
+if (firstName === 'Lucas') {
+    var firstName = 'Outro nome';
+    let lastName = 'Outro sobrenome';
+}
+
+console.log(firstName, lastName);
+
+const FIRST_NAME = 'Lucas';
